@@ -1,5 +1,6 @@
 package com.example.youtubeclonezti.models;
 
+import com.example.youtubeclonezti.models.enums.ERole;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;

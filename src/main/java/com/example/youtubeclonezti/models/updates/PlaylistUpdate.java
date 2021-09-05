@@ -1,4 +1,4 @@
-package com.example.youtubeclonezti.models;
+package com.example.youtubeclonezti.models.updates;
 
 import java.util.List;
 

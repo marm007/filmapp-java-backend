@@ -1,4 +1,6 @@
-package com.example.youtubeclonezti.models;
+package com.example.youtubeclonezti.models.updates;
+
+import com.example.youtubeclonezti.models.enums.ELike;
 
 public class FilmMetaUpdate {
 

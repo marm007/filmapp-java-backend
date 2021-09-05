@@ -15,10 +15,10 @@ import io.jsonwebtoken.*;
 public class JWTUtils {
     private static final Logger logger = LoggerFactory.getLogger(JWTUtils.class);
 
-    @Value("${youtubezti.app.jwtSecret}")
+    @Value("${film.app.jwtSecret}")
     private String jwtSecret;
 
-    @Value("${youtubezti.app.jwtExpirationMs}")
+    @Value("${film.app.jwtExpirationMs}")
     private int jwtExpirationMs;
 
     public String generateJwtToken(Authentication authentication) {

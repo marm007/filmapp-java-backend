@@ -5,8 +5,8 @@ import java.util.stream.Collectors;
 
 import javax.validation.Valid;
 
-import com.example.youtubeclonezti.models.ERole;
 import com.example.youtubeclonezti.models.User;
+import com.example.youtubeclonezti.models.enums.ERole;
 import com.example.youtubeclonezti.payloads.request.LoginRequest;
 import com.example.youtubeclonezti.payloads.request.SignupRequest;
 import com.example.youtubeclonezti.payloads.response.JWTResponse;

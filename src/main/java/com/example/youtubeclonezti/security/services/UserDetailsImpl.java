@@ -6,8 +6,9 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
-import com.example.youtubeclonezti.models.ERole;
 import com.example.youtubeclonezti.models.User;
+import com.example.youtubeclonezti.models.enums.ERole;
+
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

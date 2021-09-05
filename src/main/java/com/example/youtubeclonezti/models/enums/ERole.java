@@ -1,4 +1,4 @@
-package com.example.youtubeclonezti.models;
+package com.example.youtubeclonezti.models.enums;
 
 public enum ERole {
     ROLE_USER,

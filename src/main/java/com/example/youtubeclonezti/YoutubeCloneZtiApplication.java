@@ -1,5 +1,6 @@
 package com.example.youtubeclonezti;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
@@ -16,6 +17,9 @@ import java.util.Collections;
 @EnableMongoAuditing
 public class YoutubeCloneZtiApplication {
 
+    @Value("${film.app.frontend.url}")
+    private String frontendUrl;
+
     public static void main(String[] args) {
         SpringApplication.run(YoutubeCloneZtiApplication.class, args);
     }
@@ -26,8 +30,7 @@ public class YoutubeCloneZtiApplication {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
         // *** URL below needs to match the Vue client URL and port ***
-        config.setAllowedOrigins(Collections.singletonList("https://legolas9609.github.io"));
-        // config.setAllowedOrigins(Collections.singletonList("http://localhost:8081"));
+        config.setAllowedOrigins(Collections.singletonList(frontendUrl));
         config.setAllowedMethods(Collections.singletonList("*"));
         config.setAllowedHeaders(Collections.singletonList("*"));
         source.registerCorsConfiguration("/**", config);

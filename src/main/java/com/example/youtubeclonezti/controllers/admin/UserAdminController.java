@@ -1,7 +1,7 @@
 package com.example.youtubeclonezti.controllers.admin;
 
-import com.example.youtubeclonezti.models.AdminActiveUpdate;
 import com.example.youtubeclonezti.models.User;
+import com.example.youtubeclonezti.models.updates.AdminActiveUpdate;
 import com.example.youtubeclonezti.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

@@ -1,7 +1,7 @@
 package com.example.youtubeclonezti;
 
-import com.example.youtubeclonezti.models.ERole;
 import com.example.youtubeclonezti.models.User;
+import com.example.youtubeclonezti.models.enums.ERole;
 import com.example.youtubeclonezti.repositories.UserRepository;
 import com.example.youtubeclonezti.security.jwt.JWTUtils;
 import org.bson.types.ObjectId;

@@ -1,6 +1,7 @@
 package com.example.youtubeclonezti.controllers;
 
 import com.example.youtubeclonezti.models.*;
+import com.example.youtubeclonezti.models.updates.PlaylistUpdate;
 import com.example.youtubeclonezti.payloads.response.MessageResponse;
 import com.example.youtubeclonezti.repositories.FilmRepository;
 import com.example.youtubeclonezti.repositories.PlaylistRepository;

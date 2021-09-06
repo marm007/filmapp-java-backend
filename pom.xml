@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>youtube-clone-zti</artifactId>
+    <artifactId>filmapp-java-backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>youtube-clone-zti</name>
-    <description>Youtube Clone ZTI</description>
+    <name>filmapp-java-backend</name>
+    <description>Filmapp Java Backend</description>
 
     <properties>
         <java.version>1.8</java.version>

@@ -106,7 +106,6 @@ public class PlaylistControllerTests {
 
         Sort sort = Sort.by(Sort.Direction.DESC, "title");
         List<Playlist> playlists = playlistRepository.findAllByIsActiveTrueAndIsPublicTrueOrIsActiveTrueAndAuthorID("owner", sort);
-        System.out.println(playlists.toString());
         assertEquals(playlists.toString(), "[two, three, one]");
     }
 
@@ -138,7 +137,6 @@ public class PlaylistControllerTests {
 
         Sort sort = Sort.by(Sort.Direction.ASC, "createdDate");
         List<Playlist> playlists = playlistRepository.findAllByIsActiveTrueAndIsPublicTrueOrIsActiveTrueAndAuthorID("owner", sort);
-        System.out.println(playlists.toString());
         assertEquals(playlists.toString(), "[one, two, three]");
     }
 
@@ -170,7 +168,6 @@ public class PlaylistControllerTests {
 
         Sort sort = Sort.by(Sort.Direction.ASC, "films");
         List<Playlist> playlists = playlistRepository.findAllByIsActiveTrueAndIsPublicTrueOrIsActiveTrueAndAuthorID("owner", sort);
-        System.out.println(playlists.toString());
         assertEquals(playlists.toString(), "[one, two, three]");
     }
 

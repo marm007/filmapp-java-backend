@@ -18,7 +18,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     @Transactional
     public UserDetailsImpl loadUserByUsername(String value) throws UsernameNotFoundException {
         User user = null;
-        System.out.println(value);
+
         if (value.contains("@"))
             user = userRepository.findByEmail(value)
                 .orElseThrow(() -> new UsernameNotFoundException("User Not Found with username: " + value));

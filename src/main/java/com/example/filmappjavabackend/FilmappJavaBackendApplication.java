@@ -30,6 +30,7 @@ public class FilmappJavaBackendApplication {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
         // *** URL below needs to match the Vue client URL and port ***
+        System.out.println(frontendUrl);
         config.setAllowedOrigins(Collections.singletonList(frontendUrl));
         config.setAllowedMethods(Collections.singletonList("*"));
         config.setAllowedHeaders(Collections.singletonList("*"));

@@ -36,9 +36,13 @@ public class ImageResizer {
     public static BufferedImage resize(byte[] fileData, int width) throws IOException {
         ByteArrayInputStream in = new ByteArrayInputStream(fileData);
         BufferedImage inputImage = ImageIO.read(in);
-        float ratio = (float) inputImage.getWidth() / (float) inputImage.getHeight();
+        
+        // float ratio = (float) inputImage.getWidth() / (float) inputImage.getHeight();
+        // int scaledHeight = (int) ((float) width / ratio);
+        
+        float ratio = 9.0f / 16.0f;
         int scaledWidth = (int) (width);
-        int scaledHeight = (int) ((float) width / ratio);
+        int scaledHeight = (int) ((float) width * ratio);
         return resize(fileData, scaledWidth, scaledHeight);
     }
 }
